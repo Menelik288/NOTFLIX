@@ -249,7 +249,7 @@ body{
     display: none !important;
 }
 .btn-play {
-    background-color: #e50914;
+    background-color: #04b907;
     color: #fff;
     font-size: 1.2rem;
     font-weight: 700;
@@ -261,7 +261,7 @@ body{
 }
 
 .btn-play:hover {
-    background-color: #a31017;
+    background-color: #025f18;
     transform: scale(1.05);
 }
 .nav-search {
@@ -358,6 +358,28 @@ body{
     color: white;
     padding: 10px;
 }
+.details-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn-trailer {
+    background-color: #e50914;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-trailer:hover {
+     background-color: #a31017;
+    transform: scale(1.05);
+}
 .btn-list {
     background: rgba(255, 255, 255, 0.15);
     border: 2px solid white;
@@ -379,7 +401,25 @@ body{
     background: white;
     color: black;
 }
+.movie-card {
+    position: relative; /* allow overlay */
+}
 
+.fake-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #333;
+    border-radius: 999px;
+    overflow: hidden;
+}
+
+.fake-progress {
+    height: 100%;
+    background: #e50914;
+}
 /* Hide mobile stuff on desktop */
 .hamburger,
 .mobile-menu,
